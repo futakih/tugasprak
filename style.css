@@ -122,8 +122,6 @@ img{
     background-color: rgba(67, 180, 1, 0.822);
     width: 100%; 
     height: 70px;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
 
 .gagalmodal{
@@ -136,8 +134,7 @@ img{
     align-items: center;
     background-color: rgba(177, 6, 6, 0.733);
     width: 100%; 
-    height: 70px;
-    box-sizing: border-box;
+ 
     /* box-shadow: 5px 3px 5px rgb(16, 97, 13); */
     
 }
