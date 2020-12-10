@@ -18,12 +18,7 @@
         </div>
         <div class="formborder"></div>
     </div>
-    <div class="modalgagal">
-        <div class="gagalmodal">
-           <span>Error!</span>
-           <span>'invalid username or password'</span>
-        </div>
-    </div>
+    
 
     <img src="img/pnghut_attack-on-titan-2-a-o-t-wings-of-freedom-playstation-4-nights-azure-video-game-character-colossus-rhodes.png" alt="">
     <br>
@@ -38,6 +33,12 @@
         <div class="formborder"></div>
         <button class="tombol">login</button>
     </form>
+    <div class="modalgagal">
+        <div class="gagalmodal">
+           <span>Error!</span>
+           <span>'invalid username or password'</span>
+        </div>
+    </div>
     <script>
         function validasi(){
             var username = document.forms["iniform"]["username"].value;
@@ -75,9 +76,7 @@
         modalgagal.querySelector('.gagalmodal').addEventListener('click', function(e) {
             e.stopPropagation();
         });
-        modalsukses.querySelector('.suksesmodal').addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
+
         }) 
     </script>
     
