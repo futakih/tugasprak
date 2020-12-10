@@ -64,6 +64,8 @@ img{
     color: cornsilk;
     outline: none;
     box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
 
 }
 .tombol:hover{
