@@ -6,22 +6,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body id="body">
     <br>
-    <div class="modalbg">
-        <div class="modal">sukses</div>
+    <div class="modalsukses">
+        <div class="modal">
+           <h1>Sukses!!!</h1>
+        </div>
+        <div class="formborder"></div>
     </div>
     <div class="modalgagal">
-        <div class="modal">password dan username salah</div>
+        <div class="modal">
+           <span>Username atau Password SALAH !</span>
+        </div>
     </div>
 
     <img src="img/pnghut_attack-on-titan-2-a-o-t-wings-of-freedom-playstation-4-nights-azure-video-game-character-colossus-rhodes.png" alt="">
     <br>
 
     <form name="iniform" class="kotaklogin">
-        <h1>LOGIN</h1>
+        <h1>LOGIN!</h1>
         <!-- <div class="formborder"></div> -->
         <label for="username">Username *</label>
         <input id="username" type="text" name="username" class="formcontent">
@@ -36,28 +43,25 @@
             var username = document.forms["iniform"]["username"].value;
             console.log('username')
             var password = document.forms["iniform"]["password"].value;
-            if( username == "futakih" && password == "123"){
-                modalbg.classList.add("normal");
-                body.style.background="green";
+            if( username == "pweb_C" && password == "123"){
+                modalsukses.classList.add("normal");
+                body.style.backgroundImage='url(img/attack-on-titan-2-a2-1366x768.jpg)';
 
             
             }
-            else if(username =="" || password ==""){
+            else{
                 modalgagal.classList.add("normal");
             
             }
-            else{
-            alert("Username atau password yang Anda masukan SALAH");
-           
-            }
+
         }
         let body=document.getElementById("body");
         console.log(body)
         let btn=document.querySelector(".tombol");
         let btn2=document.querySelector(".tombol");
         console.log(btn);
-        let modalbg=document.querySelector('.modalbg');
-        console.log(modalbg);
+        let modalsukses=document.querySelector('.modalsukses');
+        console.log(modalsukses);
         let modalgagal=document.querySelector('.modalgagal');
         console.log(modalgagal);
         // let jancok=document.getElementsByName('jancok').addEventListener("click",function(event){
@@ -69,8 +73,8 @@
             validasi();
             event.preventDefault()  
         });
-        modalbg.addEventListener('click', function(){
-            modalbg.classList.remove("normal")
+        modalsukses.addEventListener('click', function(){
+            modalsukses.classList.remove("normal")
         });
         modalgagal.addEventListener('click', function(){
             modalgagal.classList.remove("normal")
@@ -78,7 +82,7 @@
         modalgagal.querySelector('.modal').addEventListener('click', function(e) {
             e.stopPropagation();
         });
-        modalbg.querySelector('.modal').addEventListener('click', function(e) {
+        modalsukses.querySelector('.modal').addEventListener('click', function(e) {
             e.stopPropagation();
         });
         }) 
