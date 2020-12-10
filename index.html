@@ -30,7 +30,6 @@
 
     <form name="iniform" class="kotaklogin">
         <h1>LOGIN!</h1>
-        <!-- <div class="formborder"></div> -->
         <label for="username">Username *</label>
         <input id="username" type="text" name="username" class="formcontent">
         <div class="formborder"></div>
@@ -44,10 +43,9 @@
             var username = document.forms["iniform"]["username"].value;
             console.log('username')
             var password = document.forms["iniform"]["password"].value;
-            if( username == "pweb_C" && password == "123"){
+            if( username == "pweb_C" && password == "123123"){
                 modalsukses.classList.add("normal");
                 body.style.background='green';
-            
             }
             else{
                 modalgagal.classList.add("normal");
@@ -63,10 +61,6 @@
         console.log(modalsukses);
         let modalgagal=document.querySelector('.modalgagal');
         console.log(modalgagal);
-        // let jancok=document.getElementsByName('jancok').addEventListener("click",function(event){
-        //     event.preventDefault()
-        // });
-        // console.log(jancok)
     
         btn.addEventListener('click', function(){
             validasi();
