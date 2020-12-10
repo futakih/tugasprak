@@ -1,0 +1,123 @@
+
+body{
+    background-image: url(img/wp1837539-attack-on-titan-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.kotaklogin{
+    font-family: 'Roboto', sans-serif;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 40px 50px 60px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: cornsilk;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(158, 33, 11, 0.363);
+
+}
+.kotaklogin label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+img{
+    display: flex;
+    width: 300px;
+    margin: auto;
+
+}
+.kotaklogin h1{
+    /* text-decoration: underline  rgb(116, 22, 10) ; */
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.formcontent{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+    color: rgb(248, 164, 85);
+    border: none;
+    background: none;
+    outline: none;
+
+}
+.formborder{
+    background-color: rgb(182, 50, 32);
+    height: 1px;
+    
+}
+
+.tombol{
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    background-color: rgba(7, 87, 7, 0.822) ;
+    text-decoration: none;
+    border: none;
+    color: cornsilk;
+    outline: none;
+    box-sizing: border-box;
+
+}
+.tombol:hover{
+   background:rgba(10, 136, 10, 0.753) ;
+   
+}
+.tombol:active{
+    outline: 1px red;
+
+}
+
+.modalbg{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 1;
+}
+.modalgagal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.normal{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 234, 221, 0.589);
+    width: 400px; 
+    height: 200px;
+    
+}
+.modal h1{
+    text-align: center;
+}
+
