@@ -14,13 +14,14 @@
     <br>
     <div class="modalsukses">
         <div class="suksesmodal">
-           <h1>Sukses!!!</h1>
+           <h1>Succes!!!</h1>
         </div>
         <div class="formborder"></div>
     </div>
     <div class="modalgagal">
         <div class="gagalmodal">
-           <span>Username atau Password SALAH !</span>
+           <span>Error!</span>
+           <span>'invalid username or password'</span>
         </div>
     </div>
 
@@ -45,14 +46,13 @@
             var password = document.forms["iniform"]["password"].value;
             if( username == "pweb_C" && password == "123"){
                 modalsukses.classList.add("normal");
-                body.style.backgroundImage='url(img/attack-on-titan-2-a2-1366x768.jpg)';
+                body.style.background='green';
             
             }
             else{
                 modalgagal.classList.add("normal");
             
             }
-
         }
         let body=document.getElementById("body");
         console.log(body)
